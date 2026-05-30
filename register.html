@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册 - 致远学堂</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="images/logo.svg" alt="logo" class="logo-img">致远学堂</div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="https://github.com/Reversedeer/js-home" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-page">
+    <div class="form-card">
+      <h2>注册</h2>
+      <form id="register-form" novalidate>
+        <div class="form-group">
+          <label for="reg-username">用户名</label>
+          <input type="text" id="reg-username" placeholder="请输入用户名（3-20个字符）" autocomplete="off">
+          <span class="error-msg"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">密码</label>
+          <input type="password" id="reg-password" placeholder="请输入密码（6-20个字符）">
+          <span class="error-msg"></span>
+          <small id="password-strength" style="color:#888;"></small>
+        </div>
+        <div class="form-group">
+          <label for="reg-confirm">确认密码</label>
+          <input type="password" id="reg-confirm" placeholder="请再次输入密码">
+          <span class="error-msg"></span>
+        </div>
+        <button type="submit" class="submit-btn">注 册</button>
+      </form>
+      <div class="form-footer">
+        已有账号？<a href="login.html">立即登录</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>作者：杨邵杰 Reversedeer &nbsp;|&nbsp; 2026 &nbsp;|&nbsp; 版权 Reversedeer 所有</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

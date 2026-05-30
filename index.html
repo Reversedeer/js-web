@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>致远学堂 - 在线学习平台</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="images/logo.svg" alt="logo" class="logo-img">致远学堂</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="https://github.com/Reversedeer/js-home" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide active">
+          <div class="slide-content">
+            <h3>温故而知新，可以为师矣</h3>
+            <p>每日精进，积少成多，开启你的学习之旅</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h3>学如逆水行舟，不进则退</h3>
+            <p>制定学习计划，坚持每日打卡，遇见更好的自己</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h3>博学之，审问之，慎思之，明辨之，笃行之</h3>
+            <p>从基础到进阶，系统化掌握前端开发技能</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h3>千里之行，始于足下</h3>
+            <p>现在就加入我们，和万千学子一起成长进步</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn prev">&lt;</button>
+      <button class="carousel-btn next">&gt;</button>
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="home-grid" style="margin-top:24px;">
+      <div class="card">
+        <h2>学习时钟</h2>
+        <div class="clock-display">
+          <div class="time" id="clock-time">--:--:--</div>
+          <div class="date" id="clock-date">----年--月--日 星期-</div>
+        </div>
+        <p class="card-hint">珍惜时间，把握当下</p>
+      </div>
+
+      <div class="card">
+        <h2>期末倒计时</h2>
+        <p style="text-align:center;color:#888;margin-bottom:10px;">距离2026年7月10日期末考试还有</p>
+        <div class="countdown-display">
+          <div class="count-item">
+            <span class="num" id="countdown-day">00</span>
+            <span class="label">天</span>
+          </div>
+          <div class="count-item">
+            <span class="num" id="countdown-hour">00</span>
+            <span class="label">时</span>
+          </div>
+          <div class="count-item">
+            <span class="num" id="countdown-min">00</span>
+            <span class="label">分</span>
+          </div>
+          <div class="count-item">
+            <span class="num" id="countdown-sec">00</span>
+            <span class="label">秒</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card quote-box">
+      <div class="quote-text">业精于勤，荒于嬉；行成于思，毁于随。</div>
+      <div class="quote-author">—— 韩愈《进学解》</div>
+    </div>
+
+    <div class="card tabs">
+      <h2>学习工具箱</h2>
+      <div class="tab-nav">
+        <button class="active">学习计划</button>
+        <button>课程列表</button>
+        <button>主题设置</button>
+      </div>
+
+      <div class="tab-panel active">
+        <div class="todo-input-group">
+          <input type="text" id="todo-input" placeholder="添加你的学习计划，按回车确认...">
+          <button id="todo-add-btn">添加计划</button>
+        </div>
+        <ul class="todo-list" id="todo-list"></ul>
+      </div>
+
+      <div class="tab-panel">
+        <table class="course-table">
+          <thead>
+            <tr><th>课程名称</th><th>课时</th><th>难度</th><th>讲师</th></tr>
+          </thead>
+          <tbody id="user-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="tab-panel">
+        <p style="margin-bottom:14px;color:#666;">选择你喜欢的页面主题色：</p>
+        <div class="color-grid">
+          <button class="color-btn active" data-color="#f5f7fa" style="background:#f5f7fa"></button>
+          <button class="color-btn" data-color="#fef9e7" style="background:#fef9e7"></button>
+          <button class="color-btn" data-color="#eaf2f8" style="background:#eaf2f8"></button>
+          <button class="color-btn" data-color="#fdedec" style="background:#fdedec"></button>
+          <button class="color-btn" data-color="#e8f8f5" style="background:#e8f8f5"></button>
+          <button class="color-btn" data-color="#f4ecf7" style="background:#f4ecf7"></button>
+        </div>
+        <p style="margin-top:16px;font-size:13px;color:#aaa;">主题偏好将保存在本地浏览器中</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p>作者：杨邵杰 Reversedeer &nbsp;|&nbsp; 2026 &nbsp;|&nbsp; 版权 Reversedeer 所有</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 - 致远学堂</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><img src="images/logo.svg" alt="logo" class="logo-img">致远学堂</div>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="login.html">登录</a></li>
+      <li><a href="register.html">注册</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="https://github.com/Reversedeer/js-home" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>关于本站</h2>
+      <p class="about-desc">本站是一个JavaScript课程综合实践作品，旨在展示前端开发中常用的核心技术。项目以"在线学习"为主题，整合了课堂所学的各项知识点。</p>
+    </div>
+
+    <div class="card">
+      <h2>涉及知识点</h2>
+      <div class="knowledge-grid">
+        <div class="knowledge-item">
+          <div class="k-badge k-loop">循环结构</div>
+          <p>for循环、while循环、forEach遍历数组，用于轮播切换、列表渲染、用户查找等场景</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-branch">分支结构</div>
+          <p>if-else条件判断、switch多分支选择，用于表单验证、状态切换、密码强度等逻辑</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-func">函数定义</div>
+          <p>封装了20余个功能函数，涵盖初始化、验证、渲染、工具等类型</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-array">数组操作</div>
+          <p>push添加、splice删除、forEach遍历、索引访问，用于待办列表、课程数据等</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-bom">BOM编程</div>
+          <p>setInterval实现时钟和倒计时，setTimeout实现延时提示，localStorage存储数据</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-event">事件编程</div>
+          <p>click点击、blur失焦、input输入、keydown键盘、submit提交、事件委托等多种事件</p>
+        </div>
+        <div class="knowledge-item">
+          <div class="k-badge k-dom">DOM编程</div>
+          <p>createElement创建元素、appendChild追加节点、classList样式控制、innerHTML等</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>功能一览</h2>
+      <table class="course-table">
+        <thead>
+          <tr><th>功能模块</th><th>所在页面</th><th>核心技术</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>轮播图</td><td>首页</td><td>定时器 + 事件 + for循环 + 数组</td></tr>
+          <tr><td>网页时钟</td><td>首页</td><td>setInterval + Date对象 + switch分支</td></tr>
+          <tr><td>期末倒计时</td><td>首页</td><td>setInterval + 时间计算 + 分支判断</td></tr>
+          <tr><td>Tab选项卡</td><td>首页</td><td>事件绑定 + for循环 + 闭包</td></tr>
+          <tr><td>学习计划</td><td>首页</td><td>数组CRUD + DOM渲染 + 事件委托</td></tr>
+          <tr><td>课程列表</td><td>首页</td><td>数组forEach + createElement + 分支</td></tr>
+          <tr><td>主题切换</td><td>首页</td><td>事件 + localStorage + while循环</td></tr>
+          <tr><td>用户注册</td><td>注册页</td><td>表单验证 + localStorage + 正则</td></tr>
+          <tr><td>用户登录</td><td>登录页</td><td>表单验证 + 数组查找 + 状态管理</td></tr>
+          <tr><td>登录状态</td><td>全局</td><td>localStorage + DOM更新 + 事件</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>项目信息</h2>
+      <div class="project-info">
+        <p>技术栈：HTML5 + CSS3 + 原生JavaScript（ES5）</p>
+        <p>页面数量：4个（首页、登录、注册、关于）</p>
+        <p>开发工具：VS Code</p>
+        <p>浏览器兼容：Chrome / Firefox / Edge</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p>作者：杨邵杰 Reversedeer &nbsp;|&nbsp; 2026 &nbsp;|&nbsp; 版权 Reversedeer 所有</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
