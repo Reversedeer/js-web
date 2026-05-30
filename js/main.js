@@ -35,7 +35,7 @@ function updateAuthNav() {
   if (currentUser) {
     navLinks.innerHTML = '<li><a href="index.html">首页</a></li>' +
       '<li><a href="about.html">关于</a></li>' +
-      '<li><a href="https://github.com/Reversedeer/js-home" target="_blank">GitHub</a></li>' +
+      '<li><a href="https://github.com/Reversedeer/js-web" target="_blank">GitHub</a></li>' +
       '<li><span class="nav-user">' + currentUser.username + '</span></li>' +
       '<li><a href="javascript:void(0)" class="nav-logout" id="btn-logout">退出登录</a></li>';
 
